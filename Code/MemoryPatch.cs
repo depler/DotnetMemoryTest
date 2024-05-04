@@ -2,7 +2,7 @@
 using System.Buffers;
 using System.Reflection;
 
-namespace DotnetTest3;
+namespace DotnetMemoryTest.Code;
 
 public static class MemoryPatch
 {

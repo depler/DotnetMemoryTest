@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace DotnetTest3;
+namespace DotnetMemoryTest.Code;
 
 public static class MemoryCollector
 {

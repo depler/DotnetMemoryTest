@@ -1,7 +1,7 @@
 ﻿using System.Buffers;
 using System.Collections.Concurrent;
 
-namespace DotnetTest3;
+namespace DotnetMemoryTest.Code;
 
 public sealed class MemoryBlock : IMemoryOwner<byte>
 {
@@ -27,7 +27,7 @@ public sealed class MemoryBlockPool : MemoryPool<byte>
 {
     private const int MaxMemory = 1024 * 1024 * 100; //100mb
     private const int MaxBlockSize = 1024 * 128; //128kb
-    private const int MaxBlockCount = MaxMemory / MaxBlockSize; 
+    private const int MaxBlockCount = MaxMemory / MaxBlockSize;
 
     private static readonly ConcurrentQueue<MemoryBlock> Blocks = new();
 
